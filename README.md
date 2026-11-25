@@ -39,39 +39,39 @@ codex plugin list --marketplace cep-personal --json
 
 如果企业策略禁止本地插件，或当前界面未显示该来源，请保留报错并核对宿主支持范围；不要通过覆盖全局配置绕过限制。
 
-## 使用
+## 在已有项目中使用
 
-自动匹配示例，直接在 Codex 中发送：
+用 Codex 打开要处理的项目，在该项目的对话中发送请求。七个技能都可以单独使用，只有需要从需求一路做到验收时，才建议选择「工程工作流统筹」。
+
+**只发技能名。** 如果上文已经说清任务，例如“只审查我还没提交的改动”，下一条消息可以只写一行：
 
 ~~~text
-修复这个项目中数量为 0 时仍然计费的问题，并验证修复。
+$codex-engineering-pro:cep-independent-code-review
 ~~~
 
-Codex 会按描述决定是否读取匹配技能；允许自动匹配不代表每个请求必定触发。需要稳定指定流程时，输入 $ 并选择对应技能。以选择器显示的名称为准；本包固定的内部技能名如下：
+技能名指定工作方式，具体审查对象取自当前项目和对话上下文。在空白对话里，如果缺少目标、报错或审查范围，Codex 可能需要追问。每个技能都提供默认提示词，客户端是否自动填入取决于界面。桌面已实测「技能名加具体任务」能调用代码库调查；仅发送技能名的桌面流程尚未单独验证。
 
-| 中文名称 | 英文目录与内部 ID | 适用请求 |
+**首次接手项目。** 在空白对话中，给技能加一句具体目标，Codex 就能直接着手调查：
+
+~~~text
+$codex-engineering-pro:cep-codebase-investigator 找出项目的启动入口、核心调用链和测试命令，给出文件位置。只读调查。
+~~~
+
+在 CLI 中输入 `$` 或运行 `/skills` 可以选择技能。在桌面 Codex 对话中，可输入 `@codex-engineering-pro` 选择插件，再在同一条消息中写上完整技能名和任务。这些内容都发在对话输入框里。
+
+**按任务选技能。** 下表中的完整名称可以直接复制。
+
+| 眼下要做的事 | 技能 | 完整调用名 |
 | --- | --- | --- |
-| 工程工作流统筹 | cep-engineering-workflow | 端到端完成工程任务 |
-| 代码库调查 | cep-codebase-investigator | 只读解释入口与调用链 |
-| 需求规划 | cep-requirement-planner | 先给范围与实施计划 |
-| 安全实现 | cep-safe-implementation | 按明确目标编码 |
-| 测试验证 | cep-test-verification | 验收与回归检查 |
-| 独立代码审查 | cep-independent-code-review | 只读审查代码差异 |
-| 调试专家 | cep-debugging-specialist | 复现异常并找根因 |
+| 理清已有项目的入口、模块和调用链 | 代码库调查 | `$codex-engineering-pro:cep-codebase-investigator` |
+| 为新功能或重构明确范围和验收条件 | 需求规划 | `$codex-engineering-pro:cep-requirement-planner` |
+| 按明确的目标修改代码 | 安全实现 | `$codex-engineering-pro:cep-safe-implementation` |
+| 定位报错或失败测试的根因 | 调试专家 | `$codex-engineering-pro:cep-debugging-specialist` |
+| 检查改动是否满足验收条件 | 测试验证 | `$codex-engineering-pro:cep-test-verification` |
+| 只读审查当前差异或指定提交 | 独立代码审查 | `$codex-engineering-pro:cep-independent-code-review` |
+| 从需求、实现一直推进到验证 | 工程工作流统筹 | `$codex-engineering-pro:cep-engineering-workflow` |
 
-显式调用示例：
-
-~~~text
-$codex-engineering-pro:cep-engineering-workflow 完成当前需求，采用智能模式 B。
-$codex-engineering-pro:cep-codebase-investigator 只读调查入口、调用链和测试命令，不修改文件。
-$codex-engineering-pro:cep-requirement-planner 为这个跨模块需求制定计划，等我确认后再实现。
-$codex-engineering-pro:cep-safe-implementation 按已确认的验收标准修改代码。
-$codex-engineering-pro:cep-test-verification 验证当前改动，记录真实结果。
-$codex-engineering-pro:cep-independent-code-review 只读审查当前差异，给出有证据的问题。
-$codex-engineering-pro:cep-debugging-specialist 复现这个失败测试，定位根因并修复。
-~~~
-
-这些是 Codex 提示词，不是终端命令。本次 CLI 实测的完整注册名为 codex-engineering-pro: 后接内部 ID，上述示例已使用完整名称。若其他版本显示不同，从 $ 或 /skills 选择器选中该中文技能。
+**自动匹配。** 也可以直接发送“修复这个项目中数量为 0 时仍然计费的问题，并验证修复”。Codex 会根据任务和技能描述决定是否调用相应技能。
 
 ## 智能模式 B
 
