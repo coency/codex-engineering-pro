@@ -2,11 +2,11 @@
 
 版本 0.1.1，个人首版，仅面向 Codex。未公开发布，未选择许可证。
 
-完整分发包根目录 README.md 包含本地插件市场安装、刷新与卸载步骤。本插件目录是安装缓存中需要保留的完整组件，不能只复制 SKILL.md。
+完整分发包根目录的 README.md 提供桌面安装步骤、已有项目的使用示例和验证记录。
 
 ## 工作方式
 
-默认允许自动匹配，也可以在 Codex 输入 $ 或运行 /skills 选择技能。内部 ID：
+在 Codex 桌面端打开已有项目，在对话框输入 `@codex-engineering-pro` 并选中插件。要单独调用某个技能，在同一条消息里填写 `$codex-engineering-pro:cep-codebase-investigator` 这样的完整名称和具体任务。也可以直接描述任务，由 Codex 自动匹配。七个技能的内部 ID 如下。
 
 - cep-engineering-workflow：工程工作流统筹
 - cep-codebase-investigator：代码库调查
