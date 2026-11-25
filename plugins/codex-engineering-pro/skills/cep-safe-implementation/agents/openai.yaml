@@ -1,0 +1,8 @@
+interface:
+  display_name: "安全实现"
+  short_description: "按明确目标实现必要改动，保留用户工作并检查兼容性与失败路径"
+  default_prompt: "使用 $codex-engineering-pro:cep-safe-implementation 按当前验收条件实施最小必要修改并验证。"
+policy:
+  allow_implicit_invocation: true
+  products:
+    - "CODEX"

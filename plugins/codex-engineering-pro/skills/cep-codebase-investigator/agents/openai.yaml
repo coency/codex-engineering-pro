@@ -1,0 +1,8 @@
+interface:
+  display_name: "代码库调查"
+  short_description: "只读梳理项目入口、关键调用链与测试方式，提供可追溯的代码证据"
+  default_prompt: "使用 $codex-engineering-pro:cep-codebase-investigator 调查当前代码库的入口、相关调用链和验证方式。"
+policy:
+  allow_implicit_invocation: true
+  products:
+    - "CODEX"

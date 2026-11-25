@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-25",
+  "timezone": "Asia/Shanghai",
+  "codexVersion": "0.171.0-alpha.13.2",
+  "nodeVersion": "v24.14.1",
+  "installedPluginId": "codex-engineering-pro@cep-personal",
+  "installedVersion": "0.1.0",
+  "enabled": true,
+  "packageValidation": {
+    "groupsPassed": 5,
+    "errors": 0
+  },
+  "validatorTests": {
+    "passed": 13,
+    "failed": 0
+  },
+  "installedPluginFilesCompared": 18,
+  "runtimeSkills": [
+    {
+      "name": "codex-engineering-pro:cep-codebase-investigator",
+      "enabled": true,
+      "displayName": "代码库调查"
+    },
+    {
+      "name": "codex-engineering-pro:cep-debugging-specialist",
+      "enabled": true,
+      "displayName": "调试专家"
+    },
+    {
+      "name": "codex-engineering-pro:cep-engineering-workflow",
+      "enabled": true,
+      "displayName": "工程工作流统筹"
+    },
+    {
+      "name": "codex-engineering-pro:cep-independent-code-review",
+      "enabled": true,
+      "displayName": "独立代码审查"
+    },
+    {
+      "name": "codex-engineering-pro:cep-requirement-planner",
+      "enabled": true,
+      "displayName": "需求规划"
+    },
+    {
+      "name": "codex-engineering-pro:cep-safe-implementation",
+      "enabled": true,
+      "displayName": "安全实现"
+    },
+    {
+      "name": "codex-engineering-pro:cep-test-verification",
+      "enabled": true,
+      "displayName": "测试验证"
+    }
+  ],
+  "runtimeLoadErrors": [],
+  "fixtureValidation": {
+    "original": {
+      "passed": 3,
+      "failed": 1,
+      "expectedExitCode": 1
+    },
+    "repairedTemporaryCopy": {
+      "passed": 4,
+      "failed": 0,
+      "exitCode": 0
+    }
+  },
+  "modelBehaviorCases": {
+    "prepared": 18,
+    "executed": 0
+  },
+  "desktopUiTested": false,
+  "fullRemoteSchemaValidation": false
+}

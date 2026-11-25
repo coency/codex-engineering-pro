@@ -1,0 +1,8 @@
+interface:
+  display_name: "独立代码审查"
+  short_description: "从代码与验收条件独立检查改动，报告可定位且能解释影响的问题"
+  default_prompt: "使用 $codex-engineering-pro:cep-independent-code-review 只读审查当前改动，按严重程度报告有证据的问题。"
+policy:
+  allow_implicit_invocation: true
+  products:
+    - "CODEX"

@@ -1,0 +1,8 @@
+interface:
+  display_name: "测试验证"
+  short_description: "依据验收标准选择测试与构建检查，记录真实结果和未验证的行为"
+  default_prompt: "使用 $codex-engineering-pro:cep-test-verification 验证当前改动，记录执行结果及未覆盖风险。"
+policy:
+  allow_implicit_invocation: true
+  products:
+    - "CODEX"

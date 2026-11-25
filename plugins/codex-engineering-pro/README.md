@@ -1,0 +1,27 @@
+# Codex Engineering Pro
+
+版本 0.1.1，个人首版，仅面向 Codex。未公开发布，未选择许可证。
+
+完整分发包根目录 README.md 包含本地插件市场安装、刷新与卸载步骤。本插件目录是安装缓存中需要保留的完整组件，不能只复制 SKILL.md。
+
+## 工作方式
+
+默认允许自动匹配，也可以在 Codex 输入 $ 或运行 /skills 选择技能。内部 ID：
+
+- cep-engineering-workflow：工程工作流统筹
+- cep-codebase-investigator：代码库调查
+- cep-requirement-planner：需求规划
+- cep-safe-implementation：安全实现
+- cep-test-verification：测试验证
+- cep-independent-code-review：独立代码审查
+- cep-debugging-specialist：调试专家
+
+先按[智能模式 B](references/mode-b.md)判断当前动作的风险。复杂任务先计划；高风险动作前核对明确授权；用户只要求调查、规划、审查或验证时不擅自进入实现。
+
+自动选择由 Codex 宿主和模型决定，本插件不提供新的工具或权限。“独立代码审查”指单独审查过程，不能保证由另一个模型完成。共享约定和其他技能采用相对路径读取，所有引用均保留在本插件目录内。
+
+## 内容
+
+根目录 plugin.json 是当前推荐的 Agent Plugins 入口，extensions.com.openai 保存界面信息；.codex-plugin/plugin.json 是 Codex 兼容回退清单。根入口有内联 OpenAI 配置时，宿主不将它与回退清单合并。
+
+七个技能的 agents/openai.yaml 开启自动匹配，并声明 CODEX 产品范围。本地市场另有同样的产品限制。这是宿主支持的产品元数据，不是防止其他软件读取文件的隔离措施。

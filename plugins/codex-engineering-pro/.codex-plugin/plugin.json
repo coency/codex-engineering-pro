@@ -1,0 +1,34 @@
+{
+  "name": "codex-engineering-pro",
+  "version": "0.1.1",
+  "description": "面向 Codex 的中文工程技能包，覆盖调查、规划、安全实现、测试验证、独立审查和调试。",
+  "keywords": [
+    "中文",
+    "工程工作流",
+    "代码调查",
+    "需求规划",
+    "测试验证",
+    "代码审查",
+    "调试"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Codex Engineering Pro",
+    "logo": "./assets/engineering-mark.png",
+    "composerIcon": "./assets/engineering-mark.png",
+    "shortDescription": "中文工程技能：按风险推进调查、规划、实现、验证、审查与调试",
+    "longDescription": "个人首版工程工作流插件。采用智能模式 B：低风险直接推进，复杂任务先规划，高风险或不可逆操作执行前核对明确授权。支持自动匹配和显式调用。",
+    "developerName": "个人自用",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Interactive"
+    ],
+    "defaultPrompt": [
+      "用工程工作流完成这个需求，并按风险选择推进方式。",
+      "调查这个项目的入口、架构和测试方法。",
+      "独立审查当前改动，只报告有证据的问题。"
+    ]
+  }
+}

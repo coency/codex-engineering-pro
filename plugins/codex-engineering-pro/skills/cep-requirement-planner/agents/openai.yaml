@@ -1,0 +1,8 @@
+interface:
+  display_name: "需求规划"
+  short_description: "将复杂或模糊需求变为可执行计划，明确验收条件、影响范围和风险"
+  default_prompt: "使用 $codex-engineering-pro:cep-requirement-planner 为当前需求制定范围、验收标准和实施计划。"
+policy:
+  allow_implicit_invocation: true
+  products:
+    - "CODEX"

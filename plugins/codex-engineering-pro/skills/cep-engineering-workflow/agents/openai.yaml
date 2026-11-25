@@ -1,0 +1,8 @@
+interface:
+  display_name: "工程工作流统筹"
+  short_description: "协调从调查到交付的工程任务，按风险选择步骤并保留验证证据"
+  default_prompt: "使用 $codex-engineering-pro:cep-engineering-workflow 完成当前工程任务，采用智能模式 B。"
+policy:
+  allow_implicit_invocation: true
+  products:
+    - "CODEX"

@@ -1,0 +1,8 @@
+interface:
+  display_name: "调试专家"
+  short_description: "通过最小复现和可证伪实验定位异常根因，并以回归证据验证修复"
+  default_prompt: "使用 $codex-engineering-pro:cep-debugging-specialist 复现当前异常、定位根因并在授权范围内修复。"
+policy:
+  allow_implicit_invocation: true
+  products:
+    - "CODEX"

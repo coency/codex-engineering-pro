@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512" role="img" aria-label="Codex Engineering Pro">
+  <rect x="1" y="1" width="62" height="62" rx="14" fill="#122C36"/>
+  <!-- 开口六边形：端点沿同一斜面切割。 -->
+  <path fill="#E6F3EC" d="M32 9 50 19.4 44 24.4 32 17.5 19 25 19 39 32 46.5 44 39.6 50 44.6 32 55 11.5 43.2 11.5 20.8Z"/>
+  <!-- 从中心伸出的琥珀色滑块，同时构成字母 E 的中横。 -->
+  <path fill="#FFB15C" d="M31 28.5H54L49 35.5H26Z"/>
+</svg>
