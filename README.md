@@ -1,6 +1,6 @@
 # Codex Engineering Pro · 0.1.1
 
-这是给 **Codex 桌面端**使用的中文工程插件。在已有项目的对话中，你可以单独选用七个技能中的任意一个，也可以直接描述任务，让 Codex 按需匹配。个人私有版本，尚未选择许可证。
+这是给 **Codex 桌面端**使用的中文工程插件。在已有项目的对话中，你可以单独选用七个技能中的任意一个，也可以直接描述任务，让 Codex 按需匹配。个人项目，尚未选择许可证。[下载桌面插件发布包](https://github.com/coency/codex-engineering-pro/releases/latest)
 
 ## 在已有项目中使用
 
@@ -35,7 +35,7 @@
 
 如果在对话中已经能搜到并选中插件，可以直接使用。要在新电脑上安装，可以走桌面插件目录的本地来源流程：
 
-1. 使用有权访问私有仓库的账号，将本仓库克隆到本机的固定文件夹。这一步可以在 GitHub Desktop 的 **File → Clone repository** 中完成。保留包含 `.agents`、`plugins` 和本 README 的完整目录。
+1. 将本仓库克隆到本机的固定文件夹。这一步可以在 GitHub Desktop 的 **File → Clone repository** 中完成。保留包含 `.agents`、`plugins` 和本 README 的完整目录。
 2. 在 Codex 桌面端把这个仓库根文件夹作为项目打开，重启桌面应用并重新打开该项目。
 3. 在桌面应用的 **插件目录（Plugins Directory）** 中选择来源 **个人工程插件**，找到 **Codex Engineering Pro** 并安装。
 4. 回到你要工作的项目，新建对话，按上面的步骤搜索插件并试用「代码库调查」。
