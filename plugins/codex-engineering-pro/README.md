@@ -1,8 +1,8 @@
 # Codex Engineering Pro
 
-版本 0.1.1，个人首版，仅面向 Codex。通过 GitHub Releases 分发，尚未选择许可证。
+版本 0.1.2，个人首版，仅面向 Codex。通过 GitHub Releases 分发，尚未选择许可证。
 
-完整分发包根目录的 README.md 提供桌面安装步骤、已有项目的使用示例和验证记录。
+从 GitHub Release 的附件下载 codex-engineering-pro-0.1.2.zip，在桌面“添加插件”的本地 ZIP 上传入口直接选择该文件。详细说明见[项目首页](https://github.com/coency/codex-engineering-pro)。
 
 ## 工作方式
 

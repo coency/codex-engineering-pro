@@ -1,6 +1,6 @@
 {
   "name": "codex-engineering-pro",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "面向 Codex 的中文工程技能包，覆盖调查、规划、安全实现、测试验证、独立审查和调试。",
   "keywords": [
     "中文",

@@ -1,4 +1,4 @@
-# Codex Engineering Pro · 0.1.1
+# Codex Engineering Pro · 0.1.2
 
 这是给 **Codex 桌面端**使用的中文工程插件。在已有项目的对话中，你可以单独选用七个技能中的任意一个，也可以直接描述任务，让 Codex 按需匹配。个人项目，尚未选择许可证。[下载桌面插件发布包](https://github.com/coency/codex-engineering-pro/releases/latest)
 
@@ -33,14 +33,11 @@
 
 ## 首次在桌面安装
 
-如果在对话中已经能搜到并选中插件，可以直接使用。要在新电脑上安装，可以走桌面插件目录的本地来源流程：
+1. 打开 [v0.1.2 发布页](https://github.com/coency/codex-engineering-pro/releases/tag/v0.1.2)，在 **Assets（附件）** 中下载 **codex-engineering-pro-0.1.2.zip**。页面自动生成的 **Source code (zip)** 是项目源码。
+2. 在桌面客户端打开 **添加插件**，选择本地 ZIP 上传，直接选择刚下载的文件。保留压缩状态。
+3. 按界面提示安装或启用 **Codex Engineering Pro**，打开项目的新对话，输入 `@codex-engineering-pro` 检查是否可选。
 
-1. 将本仓库克隆到本机的固定文件夹。这一步可以在 GitHub Desktop 的 **File → Clone repository** 中完成。保留包含 `.agents`、`plugins` 和本 README 的完整目录。
-2. 在 Codex 桌面端把这个仓库根文件夹作为项目打开，重启桌面应用并重新打开该项目。
-3. 在桌面应用的 **插件目录（Plugins Directory）** 中选择来源 **个人工程插件**，找到 **Codex Engineering Pro** 并安装。
-4. 回到你要工作的项目，新建对话，按上面的步骤搜索插件并试用「代码库调查」。
-
-以上安装步骤依据官方的仓库级本地插件市场说明。已在 Windows 桌面验证安装后的插件搜索、图标显示和单项技能调用；新电脑上从克隆到点击安装的整套图形界面流程尚未实测。若看不到来源，先确认打开的是含 `.agents/plugins/marketplace.json` 的仓库根目录。[官方本地插件市场说明](https://developers.openai.com/plugins/build/plugins#build-your-own-curated-plugin-list)
+0.1.2 修正了 0.1.1 发布附件的目录层级。打开新的 ZIP，第一层就能看到 `plugin.json` 和 `skills/`。打包检查会逐文件核对技能、元数据和图标。各客户端的上传入口和账户策略可能不同。
 
 ## 智能模式 B
 
